@@ -1,0 +1,6 @@
+/init.zsh
+/login_init.zsh
+/zimfw.zsh
+/.latest_version
+*.zwc
+*.old

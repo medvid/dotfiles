@@ -1,0 +1,22 @@
+if has('win32') || has('win64')
+  set guifont=Consolas:h12
+  " maximize Vim on startup
+  au GUIEnter * simalt ~x
+  "colorscheme solarized
+else
+  set guifont=Ubuntu\ Mono\ 14
+endif
+
+" http://vim.wikia.com/wiki/Disable_beeping
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
+
+map  <silent>  <S-Insert>  "+p
+imap <silent>  <S-Insert>  <Esc>"+pa
+
+" https://vim.fandom.com/wiki/Hide_toolbar_or_menus_to_see_more_text
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
+

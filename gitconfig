@@ -1,0 +1,30 @@
+# vim: ft=gitconfig
+[user]
+	name = Volodymyr Medvid
+	email = vmedvid@riseup.net
+
+[credential "https://github.com"]
+	username = medvid
+
+[github]
+	user = medvid
+
+[color]
+	ui = true
+
+[core]
+	whitespace = cr-at-eol
+
+[push]
+	default = simple
+
+[alias]
+	br = branch
+	co = checkout
+	cb = checkout -b
+	c = commit -v
+	d = diff --no-prefix
+	st = status
+	s = status
+	ss = status --short
+	su = status --untracked

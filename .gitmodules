@@ -1,0 +1,63 @@
+[submodule "zim/modules/completion"]
+	path = zim/modules/completion
+	url = https://github.com/zimfw/completion
+[submodule "zim/modules/environment"]
+	path = zim/modules/environment
+	url = https://github.com/zimfw/environment
+[submodule "zim/modules/git"]
+	path = zim/modules/git
+	url = https://github.com/zimfw/git
+[submodule "zim/modules/git-info"]
+	path = zim/modules/git-info
+	url = https://github.com/zimfw/git-info
+[submodule "zim/modules/input"]
+	path = zim/modules/input
+	url = https://github.com/zimfw/input
+[submodule "zim/modules/termtitle"]
+	path = zim/modules/termtitle
+	url = https://github.com/zimfw/termtitle
+[submodule "zim/modules/utility"]
+	path = zim/modules/utility
+	url = https://github.com/zimfw/utility
+[submodule "zim/modules/zsh-autosuggestions"]
+	path = zim/modules/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zim/modules/zsh-completions"]
+	path = zim/modules/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions
+[submodule "zim/modules/zsh-history-substring-search"]
+	path = zim/modules/zsh-history-substring-search
+	url = https://github.com/zsh-users/zsh-history-substring-search
+[submodule "zim/modules/zsh-syntax-highlighting"]
+	path = zim/modules/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "vim/pack/minpac/opt/minpac"]
+	path = vim/pack/minpac/opt/minpac
+	url = https://github.com/k-takata/minpac
+[submodule "vim/pack/minpac/start/vim-sensible"]
+	path = vim/pack/minpac/start/vim-sensible
+	url = https://github.com/tpope/vim-sensible
+[submodule "vim/pack/minpac/start/nerdtree"]
+	path = vim/pack/minpac/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "vim/pack/minpac/start/molokai"]
+	path = vim/pack/minpac/start/molokai
+	url = https://github.com/tomasr/molokai
+[submodule "vim/pack/minpac/start/vim-colors-solarized"]
+	path = vim/pack/minpac/start/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
+[submodule "vim/pack/minpac/start/ctrlp.vim"]
+	path = vim/pack/minpac/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
+[submodule "vim/pack/minpac/start/lightline.vim"]
+	path = vim/pack/minpac/start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
+[submodule "vim/pack/minpac/start/undotree"]
+	path = vim/pack/minpac/start/undotree
+	url = https://github.com/mbbill/undotree
+[submodule "vim/pack/minpac/start/vim-commentary"]
+	path = vim/pack/minpac/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule "vim/pack/minpac/start/vim-buffet"]
+	path = vim/pack/minpac/start/vim-buffet
+	url = https://github.com/bagrat/vim-buffet

@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -e
+
+INSTALL_PATH=/var/lib/libvirt/boot
+echo "INSTALLKERNEL $1 $2 $3 $INSTALL_PATH"
+
+for e in $INSTALL_PATH/{vmlinuz,System.map,config}-$1; do
+  [[ -f $e ]] && sudo mv -v $e $e.old
+done
+
+sudo cp -v $2 $INSTALL_PATH/vmlinuz-$1
+sudo cp -v $3 $INSTALL_PATH/System.map-$1
+sudo cp -v .config $INSTALL_PATH/config-$1
+
+for e in vmlinuz System.map config; do
+  sudo ln -sfv $e-$1 $INSTALL_PATH/$e
+done
