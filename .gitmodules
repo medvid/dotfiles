@@ -61,3 +61,6 @@
 [submodule "vim/pack/minpac/start/vim-buffet"]
 	path = vim/pack/minpac/start/vim-buffet
 	url = https://github.com/bagrat/vim-buffet
+[submodule "vim/pack/minpac/start/gruvbox"]
+	path = vim/pack/minpac/start/gruvbox
+	url = https://github.com/gruvbox-community/gruvbox

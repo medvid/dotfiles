@@ -13,6 +13,7 @@ if exists('*minpac#init')
   call minpac#add('scrooloose/nerdtree')
   call minpac#add('tomasr/molokai')
   call minpac#add('altercation/vim-colors-solarized')
+  call minpac#add('gruvbox-community/gruvbox')
   call minpac#add('ctrlpvim/ctrlp.vim')
   call minpac#add('itchyny/lightline.vim')
   call minpac#add('mbbill/undotree')
@@ -51,9 +52,14 @@ set shiftwidth=4
 autocmd BufEnter * set fo-=c fo-=r fo-=o
 
 " Set colorscheme
-set t_Co=256
-set background=light
-colorscheme solarized
+if $TERM == 'linux'
+  let g:gruvbox_termcolors=16
+  colorscheme gruvbox
+else
+  set t_Co=256
+  set background=light
+  colorscheme solarized
+endif
 
 " Set keyboard mappings
 silent! nnoremap <F2> :CtrlPBuffer<CR>
