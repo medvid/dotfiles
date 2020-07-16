@@ -28,3 +28,7 @@
 	s = status
 	ss = status --short
 	su = status --untracked
+[credential]
+	helper = store
+[pull]
+	ff = only

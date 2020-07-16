@@ -57,7 +57,11 @@ if $TERM == 'linux'
   colorscheme gruvbox
 else
   set t_Co=256
-  set background=light
+  if filereadable('/etc/exherbo-release')
+    set background=dark
+  else
+    set background=light
+  endif
   colorscheme solarized
 endif
 
