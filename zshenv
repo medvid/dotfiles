@@ -10,8 +10,10 @@
 source /etc/profile
 export PATH="$HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
 
+[[ -d "$HOME/.gem/ruby/2.5.0/bin" ]] && export PATH="$HOME/.gem/ruby/2.5.0/bin:$PATH"
+
 ANDROID_HOME=/mnt/data/Android/Sdk
 if [[ -d "$ANDROID_HOME" ]]; then
     export ANDROID_HOME
-    export PATH=$ANDROID_HOME/platform-tools:$PATH
+    export PATH=$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$PATH
 fi
