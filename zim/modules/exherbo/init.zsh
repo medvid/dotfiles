@@ -113,7 +113,7 @@ exrepo() {
 _exrepo () {
   ((CURRENT == 2)) && _files -/ -W $EX/e
 }
-compdef _exrepo exrepo
+#compdef _exrepo exrepo
 
 exrepos() {
   cat $EX/exndbam/$1/data/*/*/REPOSITORY  | sort -u
@@ -156,7 +156,7 @@ exclone() {
   cd ~/dev/exherbo/$repo
   exlocal-infect
 }
-compdef _exrepo exclone
+#compdef _exrepo exclone
 
 # TODO: function to run setup + compile
 # crs chromium-stable -x1 --skip-phase killold --skip-phase initmisc --skip-phase fetch_extra --skip-phase tidyup --skip-phase unpack --skip-phase prepare --skip-phase configure --skip-phase init
@@ -174,7 +174,7 @@ exlist() {
 _exlist () {
   ((CURRENT == 2)) && _files -/ -W $EX/exndbam
 }
-compdef _exlist exlist
+#compdef _exlist exlist
 
 exgcc() {
   sudo eclectic cc set gcc

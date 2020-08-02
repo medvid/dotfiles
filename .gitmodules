@@ -64,6 +64,9 @@
 [submodule "vim/pack/minpac/start/vim-gist"]
 	path = vim/pack/minpac/start/vim-gist
 	url = https://github.com/mattn/vim-gist
+[submodule "vim/pack/minpac/start/gruvbox"]
+	path = vim/pack/minpac/start/gruvbox
+	url = https://github.com/gruvbox-community/gruvbox
 [submodule "vim/pack/minpac/start/webapi-vim"]
 	path = vim/pack/minpac/start/webapi-vim
 	url = https://github.com/mattn/webapi-vim

@@ -247,9 +247,6 @@ mcd () {
 }
 compdef mcd=cd
 
-# Include distro-specific configuration
-[[ -f /etc/exherbo-release ]] && source ~/.zsh/exherbo.zsh
-
 if type nvim >/dev/null; then
   export EDITOR=nvim
   alias vi=nvim
