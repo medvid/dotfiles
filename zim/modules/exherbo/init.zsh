@@ -130,13 +130,13 @@ exlocal-infect() {
     git config remote.sandbox.url >/dev/null && git remote -v remove sandbox
     git config remote.origin.url >/dev/null && git remote -v remove origin
 
-    local origin=$(cd $EX/e/$repo && git config remote.origin.url)
+    local origin=$(cd $EX/$repo && git config remote.origin.url)
     [[ -n $origin ]] || { echo "Cannot determine origin URL"; return 1; }
     local baseurl=$(dirname $(dirname $origin))
     local sandbox=${baseurl/git.exherbo.org/gitlab.exherbo.org}/medvid/$repo
 
     git remote -v add origin $origin
-    git remote -v add local $EX/e/$repo
+    git remote -v add local $EX/$repo
     git remote -v add sandbox $sandbox
 
     git remote -v
@@ -152,7 +152,7 @@ exlocal-infect() {
 
 exclone() {
   local repo=$1
-  git clone $EX/e/$repo ~/dev/exherbo/$repo
+  git clone $EX/$repo ~/dev/exherbo/$repo
   cd ~/dev/exherbo/$repo
   exlocal-infect
 }
