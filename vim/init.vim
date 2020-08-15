@@ -19,6 +19,8 @@ if exists('*minpac#init')
   call minpac#add('mbbill/undotree')
   call minpac#add('tpope/vim-commentary')
   call minpac#add('bagrat/vim-buffet')
+  call minpac#add('mattn/webapi-vim')
+  call minpac#add('mattn/vim-gist')
 endif
 
 " Define user commands for updating/cleaning the plugins.
