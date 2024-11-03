@@ -1,0 +1,16 @@
+{{- if eq .chezmoi.os "windows" -}}
+set ZIM_HOME=%USERPROFILE%\.zim
+@if not exist %ZIM_HOME%\ exit /b 0
+
+@if not exist %ZIM_HOME%\modules\zsh-syntax-highlighting goto zimfw
+@pushd %ZIM_HOME%\modules\zsh-syntax-highlighting
+@for %%f in (.revision-hash,.version) do @(
+  @if not exist %%f copy /y {{ osClean .chezmoi.sourceDir }}\dot_zim\modules\zsh-syntax-highlighting\%%f %%f
+)
+@popd
+
+:zimfw
+@set PATH=%PATH%;C:\cygwin64\bin
+@if exist %ZIM_HOME%\zimfw.zsh zsh %ZIM_HOME%\zimfw.zsh build
+@exit /b 0
+{{- end -}}

@@ -1,0 +1,16 @@
+{{- if (not (eq .chezmoi.os "windows")) -}}
+#!/usr/bin/env zsh
+
+export ZIM_HOME="$HOME/.zim"
+if [[ -d "$ZIM_HOME/modules/zsh-syntax-highlighting" ]]; then
+  cd "$ZIM_HOME/modules/zsh-syntax-highlighting"
+  for dot_file in .revision-hash .version; do
+    [[ -f $dot_file ]] || cp -v {{ .chezmoi.sourceDir }}/dot_zim/modules/zsh-syntax-highlighting/$dot_file $dot_file
+  done
+  cd - >/dev/null
+fi
+
+if [[ -e "$ZIM_HOME/zimfw.zsh" ]]; then
+  zsh "$ZIM_HOME/zimfw.zsh" build
+fi
+{{- end -}}
