@@ -11,4 +11,5 @@ zmodule zsh-users/zsh-completions -z --fpath src
 zmodule completion -z
 zmodule zsh-users/zsh-syntax-highlighting -z
 zmodule zsh-users/zsh-autosuggestions -z
+zstyle ':zim:duration-info' show-milliseconds yes
 zstyle ':zim' disable-version-check yes
