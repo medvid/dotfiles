@@ -1,0 +1,7 @@
+zmodule git-info
+zmodule duration-info
+zmodule prompt-pwd
+zmodule sorin
+zmodule zsh-users/zsh-syntax-highlighting
+zmodule zsh-users/zsh-autosuggestions
+zstyle ':zim' disable-version-check yes
