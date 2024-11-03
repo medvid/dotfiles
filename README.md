@@ -37,6 +37,9 @@
     sudo zypper install curl git jq ripgrep tmux vim zsh gcc-c++ libstdc++-devel neovim nodejs python3-neovim
     sudo vim /etc/zshrc
     # comment out lines 66,67 (autoload -U compinit; compinit)
+    systemctl --user daemon-reload
+    systemctl --user enable ssh-agent
+    systemctl --user start ssh-agent
 
 ## Windows
 
