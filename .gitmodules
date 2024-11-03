@@ -1,0 +1,20 @@
+[submodule "dot_zim/modules/duration-info"]
+	path = dot_zim/modules/duration-info
+	url = https://github.com/zimfw/duration-info.git
+	branch = master
+[submodule "dot_zim/modules/git-info"]
+	path = dot_zim/modules/git-info
+	url = https://github.com/zimfw/git-info.git
+	branch = master
+[submodule "dot_zim/modules/prompt-pwd"]
+	path = dot_zim/modules/prompt-pwd
+	url = https://github.com/zimfw/prompt-pwd.git
+	branch = master
+[submodule "dot_zim/modules/zsh-autosuggestions"]
+	path = dot_zim/modules/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+	branch = master
+[submodule "dot_zim/modules/zsh-syntax-highlighting"]
+	path = dot_zim/modules/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+	branch = master
