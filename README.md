@@ -22,7 +22,7 @@
     cd monokai-gnome-terminal
     ./install.sh
 
-# Fedora
+## Fedora
 
     sudo dnf update
     sudo dnf install curl fd-find git jq ripgrep tmux vim zsh gcc-c++ libstdc++-devel neovim neovim-qt nodejs python3-pip
@@ -30,6 +30,13 @@
     git clone https://github.com/0xcomposure/monokai-gnome-terminal
     cd monokai-gnome-terminal
     ./install.sh
+
+## openSUSE
+
+    sudo zypper refresh
+    sudo zypper install curl git jq ripgrep tmux vim zsh gcc-c++ libstdc++-devel neovim nodejs python3-neovim
+    sudo vim /etc/zshrc
+    # comment out lines 66,67 (autoload -U compinit; compinit)
 
 ## Windows
 
