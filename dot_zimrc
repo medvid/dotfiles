@@ -1,7 +1,14 @@
+zmodule environment -z
+zmodule git -z
+zmodule input -z
+zmodule termtitle -z
+zmodule utility -z
 zmodule git-info -z
 zmodule duration-info -z
 zmodule prompt-pwd -z
 zmodule sorin -z
+zmodule zsh-users/zsh-completions -z --fpath src
+zmodule completion -z
 zmodule zsh-users/zsh-syntax-highlighting -z
 zmodule zsh-users/zsh-autosuggestions -z
 zstyle ':zim' disable-version-check yes

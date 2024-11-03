@@ -1,14 +1,42 @@
-[submodule "dot_zim/modules/duration-info"]
-	path = dot_zim/modules/duration-info
-	url = https://github.com/zimfw/duration-info.git
+[submodule "dot_zim/modules/environment"]
+	path = dot_zim/modules/environment
+	url = https://github.com/zimfw/environment.git
+	branch = master
+[submodule "dot_zim/modules/git"]
+	path = dot_zim/modules/git
+	url = https://github.com/zimfw/git.git
+	branch = master
+[submodule "dot_zim/modules/input"]
+	path = dot_zim/modules/input
+	url = https://github.com/zimfw/input.git
+	branch = master
+[submodule "dot_zim/modules/termtitle"]
+	path = dot_zim/modules/termtitle
+	url = https://github.com/zimfw/termtitle.git
+	branch = master
+[submodule "dot_zim/modules/utility"]
+	path = dot_zim/modules/utility
+	url = https://github.com/zimfw/utility.git
 	branch = master
 [submodule "dot_zim/modules/git-info"]
 	path = dot_zim/modules/git-info
 	url = https://github.com/zimfw/git-info.git
 	branch = master
+[submodule "dot_zim/modules/duration-info"]
+	path = dot_zim/modules/duration-info
+	url = https://github.com/zimfw/duration-info.git
+	branch = master
 [submodule "dot_zim/modules/prompt-pwd"]
 	path = dot_zim/modules/prompt-pwd
 	url = https://github.com/zimfw/prompt-pwd.git
+	branch = master
+[submodule "dot_zim/modules/zsh-completions"]
+	path = dot_zim/modules/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
+	branch = master
+[submodule "dot_zim/modules/completion"]
+	path = dot_zim/modules/completion
+	url = https://github.com/zimfw/completion.git
 	branch = master
 [submodule "dot_zim/modules/zsh-autosuggestions"]
 	path = dot_zim/modules/zsh-autosuggestions
