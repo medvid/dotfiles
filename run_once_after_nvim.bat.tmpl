@@ -1,0 +1,4 @@
+{{- if eq .chezmoi.os "windows" -}}
+@if not exist %USERPROFILE%\.config\nvim exit /b 0
+@if not exist %LOCALAPPDATA%\nvim mklink /j %LOCALAPPDATA%\nvim %USERPROFILE%\.config\nvim
+{{- end -}}
