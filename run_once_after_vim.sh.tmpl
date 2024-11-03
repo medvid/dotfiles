@@ -1,0 +1,6 @@
+{{- if (not (eq .chezmoi.os "windows")) -}}
+#!/usr/bin/env bash
+
+mkdir -p $HOME/.vim/{backup,swap,undo}
+
+{{ end -}}

@@ -1,0 +1,7 @@
+{{- if eq .chezmoi.os "windows" -}}
+@if not exist %USERPROFILE%\.vim exit /b 0
+@if not exist %USERPROFILE%\vimfiles mklink /j %USERPROFILE%\vimfiles %USERPROFILE%\.vim
+@if not exist %USERPROFILE%\.vim\backup\ md %USERPROFILE%\.vim\backup\
+@if not exist %USERPROFILE%\.vim\swap\ md %USERPROFILE%\.vim\swap\
+@if not exist %USERPROFILE%\.vim\undo\ md %USERPROFILE%\.vim\undo\
+{{- end -}}
