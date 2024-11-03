@@ -1,0 +1,14 @@
+{{- if (not (eq .chezmoi.os "windows")) -}}
+#!/usr/bin/env bash
+
+if [[ ! -f ~/.config/git/user ]]; then
+cat << 'EOF' > ~/.config/git/user
+# vim: ft=gitconfig
+
+[user]
+	name =
+	email =
+EOF
+fi
+
+{{ end -}}
