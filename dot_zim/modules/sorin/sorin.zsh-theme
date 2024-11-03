@@ -43,6 +43,15 @@ setopt nopromptbang prompt{cr,percent,sp,subst}
 
 zstyle ':zim:prompt-pwd:fish-style' dir-length 1
 
+autoload -Uz add-zsh-hook
+# Depends on duration-info module to show last command duration
+if (( ${+functions[duration-info-preexec]} && \
+    ${+functions[duration-info-precmd]} )); then
+  zstyle ':zim:duration-info' format ' took %B%F{yellow}%d%f%b'
+  add-zsh-hook preexec duration-info-preexec
+  add-zsh-hook precmd duration-info-precmd
+fi
+
 typeset -gA git_info
 if (( ${+functions[git-info]} )); then
   # Set git-info parameters.
