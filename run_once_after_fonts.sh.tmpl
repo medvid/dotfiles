@@ -2,5 +2,7 @@
 #!/usr/bin/env bash
 set -e
 
-fc-cache -fv
+if command fc-cache >/dev/null 2>&1; then
+  fc-cache -fv
+fi
 {{ end -}}

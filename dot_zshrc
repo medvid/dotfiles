@@ -38,6 +38,11 @@ alias gdc='git diff --cached'
 alias glg='git log --graph --decorate --all'
 alias cz='chezmoi'
 
+[[ -d "$HOME/bin" ]] && PATH="$HOME/bin:$PATH"
+[[ -d "/opt/local/bin" ]] && PATH="/opt/local/bin:$PATH"
+[[ -d "/opt/nvim/bin" ]] && PATH="/opt/nvim/bin:$PATH"
+export PATH
+
 # Configure neovim as default editor
 if type nvim >/dev/null; then
   export EDITOR=nvim
