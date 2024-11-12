@@ -4,8 +4,7 @@ Makefile
 .config/environment.d
 .config/systemd
 .local/share/fonts
-{{ end }}
-{{ if ne .chezmoi.osRelease.id "ubuntu" }}
+{{ else if ne .chezmoi.osRelease.id "ubuntu" }}
 .zshenv
 {{ end }}
 {{ if ne .chezmoi.os "windows" }}
