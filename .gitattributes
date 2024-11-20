@@ -1,2 +1,4 @@
 *.sh eol=lf
 *.sh.tmpl eol=lf
+*.zsh eol=lf
+*.zsh-theme eol=lf

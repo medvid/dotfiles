@@ -21,6 +21,13 @@ function mcd () {
 }
 compdef mcd=cd
 
+if [[ ${OS:-} == Windows_NT ]]; then
+# https://stackoverflow.com/questions/9810327/zsh-auto-completion-for-git-takes-significant-amount-of-time-can-i-turn-it-off
+__git_files () {
+    _wanted files expl 'local files' _files
+}
+fi
+
 # Quickly change directory
 alias 1='cd -'
 alias 2='cd -2'

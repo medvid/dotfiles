@@ -9,7 +9,7 @@
     sudo port install neovim nodejs16 npm8 fd jq ripgrep tmux
     Install dot_local/share/fonts/Ubuntu Mono*.ttf using FontBook
 
-## Ubuntu
+## Ubuntu / WSL:
 
     sudo apt update
     sudo apt install curl fd-find git jq ripgrep tmux vim zsh
@@ -47,8 +47,30 @@
     Install https://scoop.sh/
     scoop install neovim win32yank gcc rust nodejs
     Install dot_local/share/fonts/Caskaydia*.ttf
+    Install Cygwin with packages: make zip unzip curl wget openssh rsync zsh dos2unix
 
 ## Common
 
     sudo npm install -g neovim tree-sitter-cli
     python3 -m pip install pynvim
+
+
+Edit ~/.git/config/user:
+
+```
+# vim: ft=gitconfig
+
+[user]
+	name = Name Surname
+	email = name.surname@email.com
+
+[credential "https://bitbucket.vih.infineon.com"]
+	provider = bitbucket
+```
+
+WSL: configure credential helper:
+
+```
+[credential]
+	phelper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+```
