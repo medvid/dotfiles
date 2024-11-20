@@ -10,4 +10,5 @@ Makefile
 {{ if ne .chezmoi.os "windows" }}
 .config/git/attributes
 .config/ripgreprc
+bin/vi.cmd
 {{ end }}
