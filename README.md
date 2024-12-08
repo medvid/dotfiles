@@ -38,8 +38,7 @@
     sudo vim /etc/zshrc
     # comment out lines 66,67 (autoload -U compinit; compinit)
     systemctl --user daemon-reload
-    systemctl --user enable ssh-agent
-    systemctl --user start ssh-agent
+    systemctl --user enable --now ssh-agent
 
 ## Windows
 
