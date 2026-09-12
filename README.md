@@ -54,7 +54,7 @@
     python3 -m pip install pynvim
 
 
-Edit ~/.git/config/user:
+Edit ~/.config/git/user:
 
 ```
 # vim: ft=gitconfig

@@ -48,6 +48,7 @@ alias cz='chezmoi'
 [[ -d "$HOME/bin" ]] && PATH="$HOME/bin:$PATH"
 [[ -d "/opt/local/bin" ]] && PATH="/opt/local/bin:$PATH"
 [[ -d "/opt/nvim/bin" ]] && PATH="/opt/nvim/bin:$PATH"
+[[ -d "/home/linuxbrew/.linuxbrew/bin" ]] && PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 export PATH
 
 # Configure neovim as default editor
